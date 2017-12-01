@@ -6,24 +6,24 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Arking
+title: StarryMoon
 brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "arkingc.github.io" # the base hostname & protocol for your site
+url: "starrymoon.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: 
-facebook_username: 
-github_username:  arkingc
-email: 243744327@qq.com
-weibo_username: 
-zhihu_username: 
-linkedIn_username: 
-dribbble_username:
+twitter_username: ***
+facebook_username: ***
+instagram_username: ***
+github_username:  StarryMoon
+email: foggyrmail@gmail.com
+weibo_username: *** 
+zhihu_username: ***
+linkedIn_username: ***
 
-description_footer: 苦行僧
+description_footer: 山本无忧，因雪白头；水本无愁，因风起皱。
 
 # comments
 # two ways to comment, only choose one, and use your own short name
