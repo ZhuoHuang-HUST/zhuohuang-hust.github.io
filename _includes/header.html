@@ -1,46 +1,34 @@
-<div class="header-wrapper">
-    <header>
-        <!-- logo and description -->
-        {% if page.layout != "post" %}
-        <div class="head-area">
-            <h1 class="site-logo">
-                <a href="/"><img src="/assets/img/logo.png" class="logo"/></a>
-            </h1>
-            <h3 class="site-description">{{ site.description }}</h3>
-        </div>
-        {% endif %}
-        <nav class="site-nav">
-            <div class="left-nav">
-                <!-- add titles to all buttons -->
-                <div class="ui secondary menu inverted">
-                    <a class="item" href="/">
-                        Home
+<header id="top">
+    <div class="wrapper">
+        <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
+        <small>{{site.brief-intro}}</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    {% if page.url == '/' %}
+                    <a class="active" href="{{site.baseurl}}/">
+                        {% else %}
+                    <a href="{{site.baseurl}}/">
+                    {% endif %}
+                        <i class="fa fa-home"></i>Home
                     </a>
-                    <a class="item" href="/about.html">
-                        About
-                    </a>
-                    <a class="item" href="/archive.html">
-                        Archive
-                    </a>
-                    <div class="right menu">
-                        <div id="head-search" class="ui category search item">
-                            <div class="ui transparent icon input">
-                                <input placeholder="Search..." type="text" id="search-input" onkeypress="handleKeyPress()">
-                                <i class="search link icon" onclick="handleSubmit()"></i>
-                            </div>
-                        </div>
+                </li>
 
-                        <a class="item" href="http://stallman.org/facebook.html">
-                            <i class="facebook link icon"></i>
+                {% for my_page in site.pages %}
+                    {% if my_page.type == 'page' %}
+                    <li>
+                        {% if my_page.url == page.url %}
+                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
+                            {% else %}
+                        <a href="{{ my_page.url | prepend: site.baseurl }}">
+                        {% endif %}
+                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
                         </a>
-                        <a class="item" href="https://github.com/abhn">
-                            <i class="github link icon"></i>
-                        </a>
-                        <a class="item" href="/feed.xml">Subscribe</a>
-                    </div>
-                </div>
-            </div>
-            <div class="right-nav"></div>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         </nav>
-    </header>
-</div>
+    </div>
+</header>
