@@ -18,12 +18,13 @@ type: page
 
 ## 联系我
 
-* GitHub：[arkingc](https://github.com/arkingc)
-* email：243744327@qq.com
-* [Weibo](http://weibo.com/2873651382/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)
-* [知乎]()
+* GitHub：[StarryMoon](https://github.com/StarryMoon)
+* Email：foggyrmail@gmail.com
 * [Facebook]()
 * [Twitter]()
+* [Instagram]()
+* [微博]()
+* [知乎]()
 * [豆瓣]()
 
 ## 关于本站
@@ -32,4 +33,4 @@ type: page
 
 ## 友情链接
 
-[华仔](http://xiaohuazheng.github.io/) \| [健哥](https://guanjunjian.github.io/) \| [波波](http://blog.xbblfz.site/) \| [Gaohaoyang](https://gaohaoyang.github.io) \| [Hux](http://huangxuan.me)
+[鸡哥](https://arkingc.github.io/) \| [健哥](https://guanjunjian.github.io/) \| [波波](http://blog.xbblfz.site/) \| [Gaohaoyang](https://gaohaoyang.github.io) \| [Hux](http://huangxuan.me)
