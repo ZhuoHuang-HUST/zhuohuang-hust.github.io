@@ -19,7 +19,7 @@ type: page
 ## 联系我
 
 * GitHub：[StarryMoon](https://github.com/StarryMoon)
-* Email：foggyrmail@gmail.com
+* Email ：foggyrmail@gmail.com
 * [Facebook]()
 * [Twitter]()
 * [Instagram]()
