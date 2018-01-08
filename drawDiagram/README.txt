@@ -1,0 +1,1 @@
+This is a storage directory for the diagrams drawed bydraw.io
