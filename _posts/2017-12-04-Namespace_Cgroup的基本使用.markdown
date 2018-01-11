@@ -11,7 +11,8 @@ tags:
     - cgroup
     - runc
 ---
-##Namespace##
+
+##Namespace
 |Namespace类型|系统调用参数|隔离域|
 |---|---|---|
 |Mount Namespace|CLONE_NEWNS|文件系统|
@@ -21,7 +22,7 @@ tags:
 |Network Namespace|CLONE_NEWNET|网络栈|
 |User Namespace|CLONE_NEWUSER|用户权限|
 
-##Cgroup##
+##Cgroup
 > Linux Cgroups提供了对一组进程及将来子进程的资源限制、控制和统计的能力，这些资源包括CPU、内存、存储、网络等。Cgroups中主要有三个组件：
 
  > * cgroup
@@ -37,7 +38,7 @@ tags:
  2. 一个hierarchy可以附加多个subsystem;
  3. 一个进程可以作为多个cgroup的成员，但是这些cgroup必须在不同的hierarchy中。
 
-###理解：###
+###理解：
   - [x] cgroup的形式是一个文件系统，挂载相应类型的文件系统之后，就可以构建一个hierarchy;
   - [x] 为了便于理解，可以认为一个subsystem对应一个hierarchy,即cpu、memory等分别是不同hierarchy;
     
@@ -49,7 +50,7 @@ cpu和memory下分别都存在docker控制组
 ![20171204-04](img/in-post/20171204/20171204-04.png)
 /sys/fs/cgroup下的每个目录都是独立的hierarchy，也是根cgroup，创建docker控制组即为创建子cgroup。
 
-##简单容器创建##
+##简单容器创建
 
 ```go
  const cgroupMemoryHierarchyMount = "/sys/fs/cgroup/memory"
