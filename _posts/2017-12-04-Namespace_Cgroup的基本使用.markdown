@@ -58,6 +58,10 @@ cpu和memory下分别都存在docker控制组
 ```go
  const cgroupMemoryHierarchyMount = "/sys/fs/cgroup/memory"
 
+
+\n
+\n
+
  func main() {
     if os.Args[0] == "proc/self/exe" {
  
@@ -91,9 +95,9 @@ cpu和memory下分别都存在docker控制组
  
          os.Mkdir(path.Join(cgroupMemoryHierarchyMount, "testmemorylimit"), 0755)
  
-         ioutil.WriteFile(path.Join(cgroupMemoryHierarchyMount, "testmemorylimit", "tasks"),   []byte(strconv.Itoa(cmd.Pro    cess.Pid)), 0644)
+         ioutil.WriteFile(path.Join(cgroupMemoryHierarchyMount, "testmemorylimit", "tasks"),   []byte(strconv.Itoa(cmd.Process.Pid)), 0644)
  
-         ioutil.WriteFile(path.Join(cgroupMemoryHierarchyMount, "testmemorylimit", "memory.limit_in_bytes"), []byte("100    m"), 0644)
+         ioutil.WriteFile(path.Join(cgroupMemoryHierarchyMount, "testmemorylimit", "memory.limit_in_bytes"), []byte("100  m"), 0644)
      }
      cmd.Process.Wait()
   }
