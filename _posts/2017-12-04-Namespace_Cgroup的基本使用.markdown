@@ -12,7 +12,7 @@ tags:
     - runc
 ---
 
- ## Namespace
+## Namespace
 
 |Namespace类型|系统调用参数|隔离域|
 |---|---|---|
