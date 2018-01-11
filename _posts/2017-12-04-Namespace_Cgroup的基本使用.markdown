@@ -12,7 +12,7 @@ tags:
     - runc
 ---
 
-##Namespace
+ ## Namespace
 
 |Namespace类型|系统调用参数|隔离域|
 |---|---|---|
@@ -23,7 +23,7 @@ tags:
 |Network Namespace|CLONE_NEWNET|网络栈|
 |User Namespace|CLONE_NEWUSER|用户权限|
 
-##Cgroup
+ ##Cgroup
 > Linux Cgroups提供了对一组进程及将来子进程的资源限制、控制和统计的能力，这些资源包括CPU、内存、存储、网络等。Cgroups中主要有三个组件：
 
  > * cgroup
@@ -51,9 +51,9 @@ cpu和memory下分别都存在docker控制组
 ![20171204-04](/img/in-post/20171204/20171204-04.png)
 /sys/fs/cgroup下的每个目录都是独立的hierarchy，也是根cgroup，创建docker控制组即为创建子cgroup。
 
-## 简单容器创建
+ ## 简单容器创建
 
-```go
+ ```go
  const cgroupMemoryHierarchyMount = "/sys/fs/cgroup/memory"
  func main() {
     if os.Args[0] == "proc/self/exe" {
@@ -94,7 +94,7 @@ cpu和memory下分别都存在docker控制组
      }
      cmd.Process.Wait()
   }
-```
+ ```
 
 ![20171204-06](/img/in-post/20171204/20171204-06.png)
 
