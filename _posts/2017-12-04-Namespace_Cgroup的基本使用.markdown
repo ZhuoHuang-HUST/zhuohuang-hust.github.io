@@ -12,7 +12,7 @@ tags:
     - runc
 ---
 
-## Namespace
+##Namespace
 
 |Namespace类型|系统调用参数|隔离域|
 |---|---|---|
@@ -23,7 +23,7 @@ tags:
 |Network Namespace|CLONE_NEWNET|网络栈|
 |User Namespace|CLONE_NEWUSER|用户权限|
 
-## Cgroup
+##Cgroup
 > Linux Cgroups提供了对一组进程及将来子进程的资源限制、控制和统计的能力，这些资源包括CPU、内存、存储、网络等。Cgroups中主要有三个组件：
 
  > * cgroup
@@ -46,7 +46,7 @@ tags:
   - [x] *Linux中默认挂载(/sys/fs/cgroup)了cgroups文件系统。在Docker的实现中，Docker Daemon会在(/sys/fs/cgroup)下的每一个子系统(即hierarchy)目录中创建一个名为docker的控制组，然后再docker控制组里面，再为每个容器建立一个以容器id为名称的容器控制组，这个容器里的所有进程的进程号都会写到该控制组的tasks中。*
   ![20171204-05](/img/in-post/20171204/20171204-05.png)
   ![20171204-01](/img/in-post/20171204/20171204-01.png)
-![20171204-03](/img/in-post/20171204/20171204-03.png)
+  ![20171204-03](/img/in-post/20171204/20171204-03.png)
 cpu和memory下分别都存在docker控制组
 ![20171204-04](/img/in-post/20171204/20171204-04.png)
 /sys/fs/cgroup下的每个目录都是独立的hierarchy，也是根cgroup，创建docker控制组即为创建子cgroup。
