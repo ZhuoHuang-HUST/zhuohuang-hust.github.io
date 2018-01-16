@@ -7,7 +7,10 @@
 </p>
 
 
-<p>一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)。 </p>
+<p>
+一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)。 
+</p>
+
 <p>
 Mail  : foggyrmail@163.com <br/>
 Google: foggyrmail@google.com 
