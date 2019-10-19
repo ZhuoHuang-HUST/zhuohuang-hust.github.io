@@ -327,3 +327,4 @@ about_title: about.xml
 about_content: zh.md/en.md
 articles: _posts/
 images: /img/in-post
+tags: tags.html
