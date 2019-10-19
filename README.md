@@ -6,6 +6,7 @@
 
 
 
+
 ## Boilerplate (beta)
 
 Want to clone a boilerplate instead of my buzz blog? Here comes this!  
@@ -317,3 +318,12 @@ Copyright (c) 2015-2016 Huxpro
 
 Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
 Copyright (c) 2013-2016 Blackrock Digital LLC.
+
+
+### infos
+homepage: _config.xml
+title: index.html
+about_title: about.xml
+about_content: zh.md/en.md
+articles: _posts/
+images: /img/in-post

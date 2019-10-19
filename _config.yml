@@ -1,10 +1,10 @@
 # Site settings
-title: StarryMoon's Blog
-SEOTitle: StarryMoon
+title: Vincent's Blog
+SEOTitle: Vincent
 header-img: img/home-bg.jpg
 email: foggyrmail@gmail.com
-description: "这里是 @StarryMoon 的个人博客，与你一起发现更大的世界。"
-keyword: "StarryMoon"
+description: "这里是 @Vincent 的个人博客，与你一起发现更大的世界。"
+keyword: "Vincent"
 url: "https://starrymoon.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -16,7 +16,7 @@ weibo_username:    missinnnnnnnnnnnng
 zhihu_username:    missinnnnnnnnnnnng 
 github_username:   StarryMoon 
 twitter_username:  misssssssssssssssg 
-facebook_username: Zhuo Huang 
+facebook_username: zhhhhhhhhhhhhhhhhh 
 instagram_username: missing
 # linkedin_username:  firstname-lastname-idxxxx
 
@@ -68,7 +68,8 @@ ga_domain: starrymoon.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "山本无忧，因雪白头；<br>水本无愁，因风起皱。"
+#sidebar-about-description: "山本无忧，因雪白头；<br>水本无愁，因风起皱。"
+sidebar-about-description: "山本无忧，因雪白了头；<br>水本无愁，因风起了皱。"
 sidebar-avatar: /assests/img/提利昂.兰尼斯特.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
