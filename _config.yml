@@ -84,7 +84,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
+########
 
 # Friends
 friends: [
@@ -93,13 +93,13 @@ friends: [
     #     href: "http://su.gallery/"
     # },{
         title: "波波",
-        href: "http://blog.xbblfz.site/"
+        href: "http://blog.xbblfz.sitesss/"
     },{
         title: "鸡哥",
-        href: "http://arkingc.github.io/"
+        href: "http://arkingc.github.iosss/"
     },{
         title: "贱贱",
-        href: "http://guanjunjian.github.io/"
+        href: "http://guanjunjian.github.iosss/"
     }
     
 ]
