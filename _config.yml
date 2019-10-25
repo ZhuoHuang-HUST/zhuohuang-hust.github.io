@@ -1,7 +1,8 @@
 # Site settings
 title: Vincent's Blog
 SEOTitle: Vincent
-header-img: img/home-bg.jpg
+#header-img: img/home-bg.jpg
+header-img: img/404-bg.jpg
 email: foggyrmail@gmail.com
 description: "这里是 @Vincent 的个人博客，与你一起发现更大的世界。"
 keyword: "Vincent"
