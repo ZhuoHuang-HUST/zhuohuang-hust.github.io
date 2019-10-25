@@ -3,8 +3,8 @@ title: Vincent's Blog
 SEOTitle: Vincent
 #header-img: img/home-bg.jpg
 #header-img: img/404-bg.jpg
-#header-img: img/post-bg-universe.jpg
-header-img: img/about-bg-walle.jpg
+header-img: img/post-bg-universe.jpg
+#header-img: img/about-bg-walle.jpg
 email: foggyrmail@gmail.com
 description: "这里是 @Vincent 的个人博客，与你一起发现更大的世界。"
 keyword: "Vincent"
