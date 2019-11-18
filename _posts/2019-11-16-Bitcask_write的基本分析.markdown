@@ -16,12 +16,27 @@ tags:
 
 > bitcask 是一个日志型的基于hash表结构的key-value存储模型
 
-- 日志型数据文件； 所谓的日志型文件，就是append only，所有的写操作只追加到文件的末尾，不修改文件已有的数据。在bitcask模型中，数据文件是日志型只增不减的写入文件，数据文件默认的大小是10M，当文件大小增加到相应的限制时，就会产生一个新的文件，老的文件变成只读模式。在bitcask模型中，任意时间点下，只有一个文件是可写的，即active data file，其他已经达到限制大小的文件，称之为older data file。如下图：
+- 日志型数据文件；  
+  所谓的日志型文件，就是append only，所有的写操作只追加到文件的末尾，不修改文件已有的数据。在bitcask模型中，数据文件是日志型只增不减的写入文件，数据文件默认的大小是10M，当文件大小增加到相应的限制时，就会产生一个新的文件，老的文件变成只读模式。在bitcask模型中，任意时间点下，只有一个文件是可写的，即active data file，其他已经达到限制大小的文件，称之为older data file。如下图：
    ![20191116-01](/img/in-post/20191116/20191116-01.jpg)
-- 基于hash表的索引；为了提高查找效率，bitcask在内存建立了基于hash表的索引数据结构。hash表的结构如下图所示：
+- 基于hash表的索引；  
+  为了提高查找效率，bitcask在内存建立了基于hash表的索引数据结构。hash表的结构如下图所示：
    ![20191116-02](/img/in-post/20191116/20191116-02.jpg)
-  
-- hint文件
+  <font color=red> bitcask模型中只有**一张hash表**，</font> *file_id*表示数据文件的id号。  
+  具体过程如下：
+   ![20191116-03](/img/in-post/20191116/20191116-03.jpg)
+   基本的写操作包含一次顺序的磁盘写入和一次内存的hash表更新。
+- hint文件  
+  为了加快重建hash表的速度，bitcask模型中还存在一个hint file部分。hint file中存储着key-value的相关信息。当需要重建hash表时，不需要扫描所有的data文件，可以直接根据hint file记录的信息建立hash表。如下图所示：
+   ![20191116-04](/img/in-post/20191116/20191116-04.jpg)  
+  <font color=red>*hint file相当于WAL(write-ahead log)*</font>
+
+
+
+
+
+---
+
 
 |Namespace类型|系统调用参数|隔离域|
 |---|---|---|
