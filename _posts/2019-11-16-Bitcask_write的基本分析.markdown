@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Bitcask中write的基本分析"
+title:      "Bitcask基本介绍"
 subtitle:   "write K/V"
 date:       2019-11-16 15:00:00
 author:     "StarryMoon"
